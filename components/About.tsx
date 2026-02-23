@@ -6,7 +6,7 @@ const jaini = localFont({ src: "../app/fonts/jaini.ttf" });
 
 const About = () => {
   return (
-    <div className="relative w-full py-20 px-4 flex flex-col items-center justify-center overflow-hidden">
+    <div id="about" className="relative w-full py-20 px-4 flex flex-col items-center justify-center overflow-hidden">
       {/* Decorative Background Glow */}
       <div className="absolute top-0 right-1/4 w-[300px] h-[300px] bg-purple-900/20 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
 

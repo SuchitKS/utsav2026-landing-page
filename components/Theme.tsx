@@ -5,7 +5,7 @@ const jaini = localFont({ src: "../app/fonts/jaini.ttf" });
 
 const Theme = () => {
   return (
-    <div className="relative w-full py-20 px-4 flex flex-col items-center justify-center overflow-hidden">
+    <div id="theme" className="relative w-full py-20 px-4 flex flex-col items-center justify-center overflow-hidden">
       {/* Background Ambient Lighting */}
       <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-purple-800/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
 

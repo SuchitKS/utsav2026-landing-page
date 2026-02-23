@@ -10,7 +10,9 @@ import EventsAndWorkshops from "@/components/ExploreEvents";
 import Theme from "@/components/Theme";
 import SplashAnimation from "@/components/Splash";
 import Gallery from "@/components/Gallery";
-import Aurora from "@/components/Aurora"; 
+import Aurora from "@/components/Aurora";
+import Header from "@/components/Header";
+import Sponsors from "@/components/Sponsors";
 
 export default function Home() {
   const [animationComplete, setAnimationComplete] = useState<boolean>(false);
@@ -24,10 +26,12 @@ export default function Home() {
       ) : (
         /* ReactLenis Wrapper for Buttery Smooth Momentum Scrolling */
         <ReactLenis root options={{ lerp: 0.08, duration: 1.5, smoothWheel: true }}>
-          <div className="w-full flex flex-col relative animate-fade-in text-white">
-            
+          <div className="w-full flex flex-col relative animate-fade-in text-white pt-4">
+
+            <Header />
+
             {/* Floating Lines Parallax Background Layer */}
-            <Aurora 
+            <Aurora
               linesGradient={["#9333EA", "#C0C0C0", "#1A0B2E"]} // Premium Purple, Silver, Deep Purple
               lineCount={4}
               lineDistance={6}
@@ -36,15 +40,16 @@ export default function Home() {
               parallaxStrength={0.15}
               animationSpeed={0.5}
             />
-            
+
             {/* Foreground Scrollable Content */}
             <div className="relative z-10 w-full">
               <Hero />
               <EventsAndWorkshops />
               <Theme />
-              <Gallery /> 
+              <Gallery />
               <About />
               <PatronCom />
+              <Sponsors />
               <Contact />
             </div>
           </div>

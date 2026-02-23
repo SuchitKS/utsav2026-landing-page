@@ -4,11 +4,11 @@ import Timer from "./Timer/Timer";
 
 const Hero = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center w-full min-h-screen">
+    <div id="hero" className="relative flex flex-col items-center justify-center w-full min-h-screen">
       <div className="z-10 flex flex-col items-center justify-center w-full mt-10 px-4">
-        
+
         {/* Top Title - Metallic Silver Gradient */}
-        <h1 
+        <h1
           className="font-syne font-bold text-6xl md:text-8xl text-transparent bg-clip-text bg-gradient-to-b from-gray-100 via-gray-300 to-gray-500 tracking-wider drop-shadow-lg mb-4"
         >
           UTSAV 2026
@@ -44,7 +44,6 @@ const Hero = () => {
         <div className="mt-14 backdrop-blur-xl bg-white/[0.02] border border-white/5 p-6 rounded-3xl shadow-2xl transition-all duration-500 hover:border-white/10 hover:bg-white/[0.04]">
           <Timer />
         </div>
-        
       </div>
     </div>
   );

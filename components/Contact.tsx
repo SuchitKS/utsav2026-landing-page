@@ -7,7 +7,7 @@ const jaini = localFont({ src: "../app/fonts/jaini.ttf" });
 
 const Contact = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center py-20 px-4">
+    <div id="contact" className="relative flex flex-col items-center justify-center py-20 px-4">
       <h1 className={`${jaini.className} text-6xl md:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 text-center drop-shadow-[0_0_15px_rgba(147,51,234,0.4)]`}>
         Get In Touch
       </h1>

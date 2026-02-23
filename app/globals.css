@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @theme {
   /* This connects the CSS variables we set in layout.tsx to Tailwind classes */
   --font-syne: var(--font-syne), sans-serif;
