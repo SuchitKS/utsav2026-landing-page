@@ -31,7 +31,7 @@ export default function Home() {
               linesGradient={["#9333EA", "#C0C0C0", "#1A0B2E"]} // Premium Purple, Silver, Deep Purple
               lineCount={4}
               lineDistance={6}
-              interactive={false}
+              interactive={true}
               parallax={true}
               parallaxStrength={0.15}
               animationSpeed={0.5}
